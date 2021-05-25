@@ -1,0 +1,12 @@
+
+@mixin flexbox_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin button_hover {
+    opacity: .8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 10px 0 rgba( 0,0,0,0,3);
+}

@@ -1,11 +1,22 @@
 {
   "name": "projet3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style.scss:./style.css"
+    "sass": "sass --watch ./scss/main.scss:./public/css/style.css --style compressed"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karinetaupiac/_-_10052021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karinetaupiac/_-_10052021/issues"
+  },
+  "homepage": "https://github.com/karinetaupiac/_-_10052021#readme",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.32.13"
+  }
 }

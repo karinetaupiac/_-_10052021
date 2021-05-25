@@ -1,4 +1,28 @@
-@import './_variables';
-@import './_mixins';
-@import './placeholders';
+@import 'utils/_variables.scss';
+@import 'utils/_mixins.scss';
+@import 'utils/_placeholders.scss';
+@import 'utils/_animations.scss';
 
+.price {
+    background-color: #99e2d0;
+    color: #fff;
+    border-radius: 0 1em 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "roboto",Arial,Helvetica,sans-serif;
+    width: 6em;
+    height: 100%;
+    margin: initial;
+    -webkit-transform: translateX(5em);
+    -ms-transform: translateX(5em);
+    transform: translateX(5em);
+}    
