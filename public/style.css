@@ -272,84 +272,21 @@ p {
   color: #333;
   text-decoration: none;
 }
-.container_restaurant {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.heart_full {
-  height: 30px;
-  position: relative;
-  background-image: text;
-  stroke: black;
-  stroke-width: 20px;
-}
-.heart_full:hover {
-  background-image: text;
-  fill: linear-gradient (#ff79da, #9356dc);
+svg:hover path {
+  fill: #9356dc;
+  transition: 2s 3s ease-in linear-gradient(#ff79da, #9356dc);
   stroke: none;
-  transition: 0.5s 0s ease linear-gradient (#ff79da, #9356dc);
+  background-color: linear-gradient(#ff79da, #9356dc);
+  transition-property: background-color;
 }
-/*
-.heart_full:hover {
-  transition: 0.5s 0s ease;
-  color: linear-gradient (#ff79da, #9356dc);
-  opacity: 1;
-  z-index: 1;
-}*/
-.heart_empty {
+.heart_full {
+  margin-top: 10px;
   height: 30px;
   position: relative;
   margin-right: 40px;
   stroke: black;
-  stroke-width: 50px;
+  stroke-width: 20px;
 }
-/*
-.like .default-icon:hover,
-.like:hover,
-.like .hover-icon:hover {
-  transition: 0.5s 0s ease linear-gradient(#ff79da, #9356dc);
-}
-.like {
-  position: relative;
-  margin-right: 22px;
-  margin-top: 4px;
-  border: none;
-  background-color: white;
-}
-.like i {
-  color: #9d9d9d;
-  font-size: 24px;
-  left: 50%;
-}
-.like .hover-icon {
-  position: absolute;
-  left: 0;
-  margin-left: -5px;
-  opacity: 0;
-  transition: opacity 0.35s;
-  background-clip: text;
-}
-.like .hover-icon:hover {
-  background-image: linear-gradient(#ff79da, #9356dc);
-  opacity: 1;
-  z-index: 1;
-  transition: 0.5s 0s ease;
-  animation-name: coloredheart;
-  animation-duration: infinite;
-  animation-timing-function: linear;
-}
-.like:hover {
-  cursor: pointer;
-  overflow: hidden;
-  opacity: 1;
-  background-clip: text;
-}
-.like .default-icon:hover {
-  opacity: 0;
-}
-*/
 /*footer*/
 .footer {
   background-color: #211e1ed9;
