@@ -1,4 +1,18 @@
 //Principales
-$couleur-primaire-violet: #9356DC;
-$couleur-secondaire-rose: #FF79DA;
-$couleur-tertiaire-turquoise: #99E2D0;
+$color-first-violet: #9356dc;
+$color-second-rose: #ff79da;
+$color-third-turquoise: #99e2d0;
+
+:root {
+  --first-violet: #9356dc;
+  --second-rose: #ff79da;
+}
+svg {
+  cursor: pointer;
+}
+#violetGroup {
+  fill: var(--first-violet);
+}
+#roseGroup {
+  fill: var(--second-rose);
+}

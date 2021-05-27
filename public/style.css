@@ -9,15 +9,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 5px solid transparent;
-  border: 6px solid #9356dc;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-radius: 100%;
-  animation: spinner 6s linear forwards;
+  animation: loading 6s linear forwards;
 }
-
-@keyframes spinner {
+@keyframes loading {
   0% {
     border-width: 5px;
     transform: scale(1);
@@ -278,15 +272,51 @@ p {
   color: #333;
   text-decoration: none;
 }
+.container_restaurant {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.heart_full {
+  height: 30px;
+  position: relative;
+  background-image: text;
+  stroke: black;
+  stroke-width: 20px;
+}
+.heart_full:hover {
+  background-image: text;
+  fill: linear-gradient (#ff79da, #9356dc);
+  stroke: none;
+  transition: 0.5s 0s ease linear-gradient (#ff79da, #9356dc);
+}
+/*
+.heart_full:hover {
+  transition: 0.5s 0s ease;
+  color: linear-gradient (#ff79da, #9356dc);
+  opacity: 1;
+  z-index: 1;
+}*/
+.heart_empty {
+  height: 30px;
+  position: relative;
+  margin-right: 40px;
+  stroke: black;
+  stroke-width: 50px;
+}
+/*
 .like .default-icon:hover,
 .like:hover,
 .like .hover-icon:hover {
-  transition: 0.5s 0s ease;
+  transition: 0.5s 0s ease linear-gradient(#ff79da, #9356dc);
 }
 .like {
   position: relative;
   margin-right: 22px;
   margin-top: 4px;
+  border: none;
+  background-color: white;
 }
 .like i {
   color: #9d9d9d;
@@ -295,29 +325,31 @@ p {
 }
 .like .hover-icon {
   position: absolute;
-  top: 0;
   left: 0;
-  margin-left: -10px;
+  margin-left: -5px;
   opacity: 0;
   transition: opacity 0.35s;
-  background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 .like .hover-icon:hover {
   background-image: linear-gradient(#ff79da, #9356dc);
   opacity: 1;
   z-index: 1;
+  transition: 0.5s 0s ease;
+  animation-name: coloredheart;
+  animation-duration: infinite;
+  animation-timing-function: linear;
 }
 .like:hover {
   cursor: pointer;
   overflow: hidden;
   opacity: 1;
+  background-clip: text;
 }
 .like .default-icon:hover {
   opacity: 0;
 }
+*/
 /*footer*/
 .footer {
   background-color: #211e1ed9;
