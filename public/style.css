@@ -9,20 +9,37 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  animation: grow 5s 0s linear forwards;
+  border: 5px solid transparent;
+  border: 6px solid #9356dc;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 100%;
+  animation: spinner 6s linear forwards;
 }
-@keyframes grow {
+
+@keyframes spinner {
   0% {
-    transform: scale(1, 1);
+    border-width: 5px;
+    transform: scale(1);
   }
-  50% {
-    transform: scale(2, 2);
+  20% {
+    border-width: 2px;
+    transform: scale(2);
   }
-  90% {
-    transform: scale(1, 1);
+  40% {
+    transform: scale(1);
+    border-width: 5px;
+  }
+  60% {
+    border-width: 2px;
+    transform: scale(2);
+  }
+  80% {
+    transform: scale(1);
+    border-width: 5px;
   }
   100% {
+    border-width: 2px;
     transform: scale(0);
   }
 }

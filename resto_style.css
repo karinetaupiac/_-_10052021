@@ -127,7 +127,7 @@ span {
 }
 @keyframes rotation {
   0% {
-    transform: rotate(0) translateX(0px);
+    transform: linear;
   }
   25% {
     transform: rotate(90deg) translateX(50px);
