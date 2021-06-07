@@ -2,13 +2,33 @@
 .footer {
   background-color: #211e1ed9;
   color: #fff;
+  &_logo {
+    color: #fff;
+    margin: 30px;
+    max-width: 150px;
+  }
+  &_list {
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  &_icon {
+    color: white;
+    margin-right: 15px;
+    font-size: inherit;
+  }
+  &_text {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0;
+  }
 }
-.logo_footer {
-  color: #fff;
-  margin: 30px;
-  max-width: 150px;
-}
-.text_footer,
 h4 {
   color: #fff;
   font-family: roboto, sans-serif;
@@ -17,15 +37,6 @@ h4 {
   font-weight: 200;
   text-decoration: none;
   display: inline-block;
-  padding: 0;
-}
-.list_footer {
-  padding: 0 20px 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-h4 {
   padding: 10px;
 }
 .fas {
@@ -37,13 +48,7 @@ h4 {
   align-items: center;
   font-size: 1.5rem;
 }
-.icon_footer {
-  color: white;
-  margin-right: 15px;
-  font-size: inherit;
-}
 .mail {
   color: white;
   text-decoration: none;
 }
-

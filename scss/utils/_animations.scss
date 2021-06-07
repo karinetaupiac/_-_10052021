@@ -1,42 +1,42 @@
 .heart_empty {
-    &--empty {
-        z-index: 1;
+  &--empty {
+    z-index: 1;
     stroke: black;
+  }
+  &:hover {
+    .heart_full {
+      opacity: 1;
+      transform: scale(1);
     }
-    &:hover{
-        .heart_full{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    &--full{
-        z-index: 2;
-        fill: url(#gradient);
-        stroke: url(#gradient);
-        opacity: 0;
-        transform: scale(0);
-        transition: all 0.5s;
-    }
+  }
+  &--full {
+    z-index: 2;
+    fill: url(#gradient);
+    stroke: url(#gradient);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+  }
 }
 .restaurant {
-    &_img {
-        background-color: aqua;
-    }
+  &_img {
+    background-color: aqua;
+  }
 }
 .button {
-$border-rad: 2rem;
-$clr-btn: #15DEA5;
-.btn {
+  $border-rad: 2rem;
+  $clr-btn: #15dea5;
+  .btn {
     border-radius: $border-rad;
     background-color: $clr-btn;
     transition: background-color 250ms;
     &:hover {
-        background-color: darken($clr-btn, 5);
+      background-color: darken($clr-btn, 5);
     }
-}
+  }
 }
 .btn-circle {
-font-size: 24px;
-    color: #fff;
-    transform: rotate(360deg);
-}    
+  font-size: 24px;
+  color: #fff;
+  transform: rotate(360deg);
+}

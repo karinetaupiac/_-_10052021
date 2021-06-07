@@ -1,0 +1,31 @@
+/*commander*/
+.command {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+  font-weight: bold;
+  margin: 2rem 0 3.5rem 0;
+  padding: 25px 30px;
+  transition: 0.2s;
+}
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+  background-color: white;
+}
