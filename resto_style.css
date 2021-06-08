@@ -1,14 +1,4 @@
-/*photo*/
-.restaurants {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.restaurant_img {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-}
+
 /*plats*/
 .menu_description {
   background-color: #f3f3f3;
