@@ -10,7 +10,7 @@
   width: 100%;
 }
 /*plats*/
-.description_menu {
+.menu_description {
   background-color: #f3f3f3;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
@@ -181,4 +181,3 @@ p {
   text-align: end;
   font-weight: 600;
 }
-

@@ -1,0 +1,11 @@
+.restaurants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+  }
+}

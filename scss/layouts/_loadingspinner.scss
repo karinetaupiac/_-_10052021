@@ -14,7 +14,9 @@ html {
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+
+  overflow: hidden;
+  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader2 {
   border: 3px solid $color-first-violet;
@@ -24,7 +26,7 @@ html {
   top: -216px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader3 {
   border: 3px solid $color-second-rose;
@@ -34,7 +36,7 @@ html {
   top: -452px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader4 {
   border: 3px solid $color-first-violet;
@@ -44,7 +46,7 @@ html {
   top: -708px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 2s cubic-bezier(0.26, 1.36, 0.74, -0.29) infinite;
+  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 @keyframes rotate {
   0% {
