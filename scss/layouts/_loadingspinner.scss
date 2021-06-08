@@ -1,10 +1,11 @@
-body,
-html {
+body {
   opacity: 1;
 }
 .spin-container {
   text-align: center;
   margin-top: 400px;
+  /*visibility: hidden;
+  z-index: 20;*/
 }
 .spin {
   border: 3px solid $color-second-rose;
@@ -14,9 +15,8 @@ html {
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
-
   overflow: hidden;
-  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader2 {
   border: 3px solid $color-first-violet;
@@ -26,7 +26,7 @@ html {
   top: -216px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate2 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader3 {
   border: 3px solid $color-second-rose;
@@ -36,7 +36,7 @@ html {
   top: -452px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader4 {
   border: 3px solid $color-first-violet;
@@ -46,22 +46,30 @@ html {
   top: -708px;
   border-left-color: transparent;
   border-right-color: transparent;
-  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate2 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 @keyframes rotate {
   0% {
     transform: rotateZ(-360deg);
+    visibility: visible;
+    opacity: 0.9;
   }
   100% {
     transform: rotateZ(0deg);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes rotate2 {
   0% {
     transform: rotateZ(360deg);
+    visibility: visible;
+    opacity: 0.9;
   }
   100% {
     transform: rotateZ(0deg);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 #text1,
@@ -71,6 +79,21 @@ html {
   font-size: 40px;
   position: relative;
   top: -857px;
+  animation: fade 6s forwards;
+}
+@keyframes fade {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 #text1 {
   color: black;
