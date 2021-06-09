@@ -29,7 +29,21 @@ body {
 /*booking*/
 .booking {
   background-color: #80808012;
-  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 50px 0;
 }
 .booking_restaurant {
   margin: 30px;
@@ -40,6 +54,11 @@ h1 {
 }
 .slogan {
   text-align: center;
+}
+@media screen and (min-width: 769px) {
+  .slogan {
+    padding-bottom: 30px;
+  }
 }
 /*fonctionnement*/
 .function {
@@ -145,12 +164,13 @@ h2 {
     width: 100%;
     justify-content: space-around;
   }
-  .function_button {
+  .function_button,
+  .function_button3 {
     border: 1px solid #d9d9d9;
     border-radius: 30px;
     height: 50px;
     padding-right: 16px;
-    margin-bottom: 15px;
+    margin: 0 10px;
   }
 }
 /*plats*/
