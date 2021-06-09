@@ -3,7 +3,6 @@
   background-color: #211e1ed9;
   color: #fff;
   &_list {
-    padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -28,7 +27,7 @@ h4 {
   color: #fff;
   font-family: roboto, sans-serif;
   font-size: 1.4rem;
-  margin: 0 10px;
+  margin: 0;
   font-weight: 200;
   text-decoration: none;
   display: inline-block;
