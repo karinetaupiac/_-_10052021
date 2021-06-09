@@ -84,12 +84,39 @@ h3,
   cursor: pointer;
 }
 @media screen and (min-width: 769px) {
-  .card {
+  .container {
     display: grid;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 40% 40% 1fr;
+    grid-template-rows: 4rem repeat(2, 1fr);
+    gap: 2rem 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #80808012;
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #80808012;
+    margin: 0;
+    padding: 1rem 0 2rem 1.2rem;
+    grid-column-start: 2;
+  }
+  .restaurant1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .restaurant2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .restaurant3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .restaurant4 {
+    grid-column-start: 3;
+    grid-row-start: 3;
   }
 }
