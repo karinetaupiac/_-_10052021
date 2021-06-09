@@ -114,6 +114,15 @@ h2 {
   position: relative;
   -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+    background-color: white;
+  }
 }
 .function_button3 {
   background-color: #f0808021;
