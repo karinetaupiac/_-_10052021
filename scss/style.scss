@@ -29,7 +29,7 @@ body {
 /*booking*/
 .booking {
   background-color: #80808012;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
 }
 .booking_restaurant {
   margin: 30px;
@@ -128,18 +128,9 @@ h2 {
   background-color: #f0808021;
 }
 @media screen and (min-width: 769px) {
-  .function {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-top: 25px;
-    text-align: left;
-    width: 100%;
+  h2 {
+    max-width: 1440px;
+    text-align: center;
   }
   .function_choice {
     display: -webkit-box;
@@ -155,30 +146,11 @@ h2 {
     justify-content: space-around;
   }
   .function_button {
-    margin-left: 15px;
     border: 1px solid #d9d9d9;
     border-radius: 30px;
     height: 50px;
     padding-right: 16px;
     margin-bottom: 15px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .function {
-    width: auto;
-    height: auto;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    border-color: #f2f2f2;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding-left: 40px;
-  }
-  .function_choice {
-    display: flex;
   }
 }
 /*plats*/
