@@ -1,0 +1,112 @@
+.function {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 5px;
+  &_choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 15px 0 0 15px;
+  }
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px;
+}
+.choice_number {
+  background-color: #9356dc;
+  color: white;
+  position: absolute;
+  padding: 3px 8px;
+  border-radius: 50%;
+  left: -10px;
+}
+.function_icons,
+.function_icons3 {
+  color: #7e7e7e;
+  margin-left: 15px;
+  font-size: inherit;
+}
+.function_icons3 {
+  color: $color-first-violet;
+}
+.choice {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.command {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+}
+.function_button,
+.function_button3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #f6f6f6;
+  height: auto;
+  width: auto;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-radius: 20px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+    background-color: white;
+  }
+}
+.function_button3 {
+  background-color: #f0808021;
+}
+@media screen and (min-width: 769px) {
+  h2 {
+    max-width: 1440px;
+    text-align: center;
+  }
+  .function_choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .function_button,
+  .function_button3 {
+    border: 1px solid #d9d9d9;
+    border-radius: 30px;
+    height: 50px;
+    padding-right: 16px;
+    margin: 0 10px;
+  }
+}
