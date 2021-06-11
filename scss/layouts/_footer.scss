@@ -22,16 +22,16 @@
     display: inline-block;
     padding: 0;
   }
-}
-h4 {
-  color: #fff;
-  font-family: roboto, sans-serif;
-  font-size: 1.4rem;
-  margin: 0;
-  font-weight: 200;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px;
+  &_nav {
+    color: #fff;
+    font-family: roboto, sans-serif;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+  }
 }
 .fas {
   display: inline-block;
