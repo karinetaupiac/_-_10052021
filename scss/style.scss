@@ -9,7 +9,7 @@
 @import "./components/function.scss";
 @import "./components/loadingspinner.scss";
 @import "./components/photo.scss";
-
+@import "./layouts/_test_d_oumar_mauret.scss";
 body {
   font-family: roboto, sans-serif;
 }
@@ -27,10 +27,4 @@ body {
 }
 .localisation_title {
   font-weight: 700;
-}
-
-/* style_menu*/
-.title_menu {
-  font-family: shrikhand, sans-serif;
-  font-size: 15px;
 }
