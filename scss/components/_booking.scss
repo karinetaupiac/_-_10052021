@@ -30,4 +30,17 @@ h1 {
   .slogan {
     padding-bottom: 30px;
   }
+  .booking_restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
