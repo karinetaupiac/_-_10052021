@@ -4,10 +4,9 @@ body {
 .spin-container {
   text-align: center;
   margin-top: 400px;
-  animation: spinloader 5s;
-  animation-delay: 3s;
+  animation: spinloader 3s;
+  animation-delay: 1s;
   animation-fill-mode: both;
-  background: rgba(248, 226, 248, 0.6);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -23,7 +22,6 @@ body {
   border-radius: 50%;
   border-left-color: transparent;
   border-right-color: transparent;
-  overflow: hidden;
   animation: rotate 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
 #loader2 {
