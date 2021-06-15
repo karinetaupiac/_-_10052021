@@ -1,0 +1,51 @@
+.fill__heart {
+  margin: 20px;
+  padding-right: 10px;
+}
+.fill {
+  color: black;
+  cursor: pointer;
+  &:hover {
+    -webkit-animation: fill 0.3s ease-in-out;
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#9356dc),
+      color-stop(#b35cdc),
+      color-stop(#cf64dc),
+      color-stop(#e86edb),
+      to(#ff79da)
+    );
+    background: -o-linear-gradient(
+      right,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    background: linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    background: -webkit-linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}

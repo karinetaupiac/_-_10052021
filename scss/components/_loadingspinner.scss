@@ -1,18 +1,23 @@
-body {
+/*body {
   opacity: 1;
+}*/
+
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spinloader 5s forwards;
+  overflow-y: hidden;
 }
 .spin-container {
   text-align: center;
-  margin-top: 400px;
-  animation: spinloader 3s;
   animation-delay: 1s;
   animation-fill-mode: both;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 999;
+  border: 1px solid white;
 }
 .spin {
   border: 3px solid $color-second-rose;
@@ -28,8 +33,7 @@ body {
   border: 3px solid $color-first-violet;
   width: 220px;
   height: 220px;
-  position: relative;
-  top: -216px;
+  margin-top: -216px;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate2 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
@@ -38,8 +42,7 @@ body {
   border: 3px solid $color-second-rose;
   width: 240px;
   height: 240px;
-  position: relative;
-  top: -452px;
+  margin-top: -236px;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
@@ -48,8 +51,7 @@ body {
   border: 3px solid $color-first-violet;
   width: 260px;
   height: 260px;
-  position: relative;
-  top: -708px;
+  margin-top: -256px;
   border-left-color: transparent;
   border-right-color: transparent;
   animation: rotate2 5s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
@@ -83,8 +85,8 @@ body {
 #text3 {
   font-family: shrikhand, sans-serif;
   font-size: 40px;
-  position: relative;
-  top: -857px;
+  height: 60px;
+  width: 60px;
   animation: fade 6s forwards;
 }
 @keyframes fade {
@@ -109,4 +111,18 @@ body {
 }
 #text3 {
   color: $color-first-violet;
+}
+
+@keyframes spinloader {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+  99.99% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    height: 0vh;
+  }
 }

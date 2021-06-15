@@ -27,8 +27,16 @@ h1 {
   text-align: center;
 }
 @media screen and (min-width: 769px) {
+  .booking {
+    padding: 40px 20px;
+  }
+  h1 {
+    margin-top: 0;
+  }
   .slogan {
-    padding-bottom: 30px;
+    margin-left: 30px;
+    font-size: larger;
+    padding: 20px;
   }
   .booking_restaurant {
     display: -webkit-box;
@@ -40,7 +48,7 @@ h1 {
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
-    width: 100%;
     justify-content: space-around;
+    margin: 0;
   }
 }

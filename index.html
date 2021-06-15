@@ -23,14 +23,16 @@
   </head>
   <body>
     <!--loading spinner-->
-    <div class="spin-container">
-      <div class="spin" id="loader"></div>
-      <div class="spin" id="loader2"></div>
-      <div class="spin" id="loader3"></div>
-      <div class="spin" id="loader4"></div>
-      <span id="text1">oh</span>
-      <span id="text2">my</span>
-      <span id="text3">food</span>
+    <div class="loader">
+      <div class="spin-container">
+        <div class="spin" id="loader"></div>
+        <div class="spin" id="loader2"></div>
+        <div class="spin" id="loader3"></div>
+        <div class="spin" id="loader4"></div>
+        <span id="text1">oh</span>
+        <span id="text2">my</span>
+        <span id="text3">food</span>
+      </div>
     </div>
     <!--logo ohmyfood-->
     <!--header-->
@@ -52,7 +54,7 @@
         <p class="slogan">
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
-        <button class="btn_explore">Explorez nos restaurants</button>
+        <button class="btn">Explorez nos restaurants</button>
       </div>
     </section>
     <!--fonctionnement-->
@@ -90,7 +92,9 @@
               <h3>La palette du goût</h3>
               <p class="restaurant_subtitle">Ménilmontant</p>
             </hgroup>
-            <i class="far fa-heart heart"></i>
+            <div class="fill__heart">
+              <span><i class="fill far fa-heart fa-2x"></i></span>
+            </div>
           </header>
         </a>
       </div>
@@ -104,7 +108,9 @@
               <h3>La note enchantée</h3>
               <p class="restaurant_subtitle">Charonne</p>
             </hgroup>
-            <i class="far fa-heart heart"></i>
+            <div class="fill__heart">
+              <span><i class="fill far fa-heart fa-2x"></i></span>
+            </div>
           </header>
         </a>
       </div>
@@ -117,7 +123,9 @@
               <h3>À la française</h3>
               <p class="restaurant_subtitle">Cité Rouge</p>
             </hgroup>
-            <i class="far fa-heart heart"></i>
+            <div class="fill__heart">
+              <span><i class="fill far fa-heart fa-2x"></i></span>
+            </div>
           </header>
         </a>
       </div>
@@ -130,7 +138,9 @@
               <h3>Le délice des sens</h3>
               <p class="restaurant_subtitle">Folie-Méricourt</p>
             </hgroup>
-            <i class="far fa-heart heart"></i>
+            <div class="fill__heart">
+              <span><i class="fill far fa-heart fa-2x"></i></span>
+            </div>
           </header>
         </a>
       </div>

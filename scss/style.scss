@@ -5,13 +5,14 @@
 @import "./layouts/_container.scss";
 @import "./layouts/_footer.scss";
 @import "./components/_booking.scss";
-@import "./components/button.scss";
-@import "./components/function.scss";
-@import "./components/loadingspinner.scss";
-@import "./components/photo.scss";
-
+@import "./components/_button.scss";
+@import "./components/_function.scss";
+@import "./components/_loadingspinner.scss";
+@import "./components/_photo.scss";
+@import "./components/_heart.scss";
 body {
   font-family: roboto, sans-serif;
+  margin: 0;
 }
 /*localisation*/
 #localisation {
@@ -20,7 +21,6 @@ body {
   padding: 10px;
   background-color: #c3c3c352;
   font-size: 1.2rem;
-  position: relative;
 }
 .map {
   padding: 8px 10px;
