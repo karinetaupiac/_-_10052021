@@ -30,8 +30,6 @@
   align-items: flex-end;
   border-radius: 20px;
   margin: 20px;
-  /*-webkit-transform: scale(1);
-  transform: scale(1);*/
   -webkit-box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
   &_img {
@@ -117,37 +115,31 @@
   margin-top: -50px;
   position: relative;
 }
-.menu main {
-  background: #f6f6f6;
-  border-top-left-radius: 35px;
-  border-top-right-radius: 35px;
-  margin-top: -50px;
-  z-index: 999;
+.menu_summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px 0 10px;
 }
-
-.menu .menu__summary {
-  position: relative;
-  width: 100%;
-}
-
 h1 {
   font-size: 1.5em;
   line-height: 1;
   font-weight: bold;
 }
 
-.menu__title {
+.menu_title {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   padding: 20px 0 20px 20px;
+  text-align: left;
 }
 
-.menu__plats {
+.menu_plats {
   padding: 10px;
 }
 
 @media only screen and (min-width: 1024px) {
-  .menu__details {
+  .menu_details {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -156,18 +148,18 @@ h1 {
   }
 }
 
-.sub__title {
+.sub_title {
   margin: 20px 5px;
   font-size: 18px;
   font-weight: 100;
   text-align: left;
 }
 @media only screen and (min-width: 769px) {
-  .sub__title {
+  .sub_title {
     padding: 15px 0 15px 15px;
   }
 }
-.sub__title:after {
+.sub_title:after {
   content: "";
   border-bottom: 5px solid #99e2d0;
   display: block;
@@ -175,7 +167,7 @@ h1 {
   width: 40px;
 }
 @media screen and (min-width: 769px) {
-  .sub__title:after {
+  .sub_title:after {
     content: "";
     border-bottom: 5px solid #99e2d0;
     display: block;
@@ -183,7 +175,7 @@ h1 {
     width: 50px;
   }
 }
-.menu__title__price,
+.menu_title_price,
 h4,
 .name {
   overflow: hidden;
@@ -202,11 +194,11 @@ h4 {
   margin: 0;
 }
 
-.menu__title__price {
+.menu_title_price {
   width: 80%;
   padding: 10px;
 }
-.menu__text {
+.menu_text {
   display: flex;
   justify-content: space-between;
   background: #fff;
@@ -219,15 +211,15 @@ h4 {
   overflow: hidden;
 }
 @media only screen and (min-width: 1024px) {
-  .menu__text {
+  .menu_text {
     flex: 25%;
     margin-left: 15px;
   }
 }
-.menu__text:hover {
+.menu_text:hover {
   box-shadow: 0 5px 15px 0 #9d9d9d;
 }
-.menu__text .price__container {
+.menu_text .price_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -237,26 +229,26 @@ h4 {
   padding-right: 10px;
   text-align: right;
 }
-.menu__text .checkbox {
+.menu_text .checkbox {
   display: none;
   width: 30%;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
 }
-.menu__text .btn-circle {
+.menu_text .btn-circle {
   font-size: 24px;
   color: #fff;
   transform: rotate(360deg);
 }
 
-.menu__text:hover .price__container {
+.menu_text:hover .price_container {
   animation: checkbox-contain ease 0.3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   min-width: 50px;
 }
 
-.menu__text:hover .checkbox {
+.menu_text:hover .checkbox {
   display: block;
   flex: 0 0 15%;
   background: #99e2d0;
@@ -268,7 +260,7 @@ h4 {
   transform-origin: 50% 50%;
 }
 
-.menu__text:hover .btn-circle {
+.menu_text:hover .btn-circle {
   position: absolute;
   left: 27%;
   top: 30%;

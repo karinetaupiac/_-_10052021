@@ -1,23 +1,3 @@
-.heart_empty {
-  &--empty {
-    z-index: 1;
-    stroke: black;
-  }
-  &:hover {
-    .heart_full {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  &--full {
-    z-index: 2;
-    fill: url(#gradient);
-    stroke: url(#gradient);
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.5s;
-  }
-}
 .restaurant {
   &_img {
     background-color: aqua;
