@@ -3,6 +3,11 @@
   padding: 40px 0 50px 0;
   margin-top: 15px;
 }
+.container_title {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -86,9 +91,8 @@ h3 {
     justify-content: center;
     background: #80808012;
   }
-  h2 {
-    font-family: "roboto", sans-serif;
-    font-size: 15px;
+  .container_title {
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
     padding: 1rem 0 2rem 1.2rem;
