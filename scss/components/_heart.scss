@@ -13,6 +13,7 @@
 .fill {
   color: black;
   cursor: pointer;
+  margin: 10px 20px;
   &:hover {
     -webkit-animation: fill 0.3s ease-in-out;
     animation: fill 0.3s ease-in-out;
