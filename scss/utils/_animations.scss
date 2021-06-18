@@ -1,49 +1,57 @@
 /* ----------------------------------------
- * animation slide-left
- * ----------------------------------------
- */
-.check {
-  -webkit-animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) linear
-    1s both;
-  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) linear 1s both;
-}
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-}
-/* ----------------------------------------
  * animation check
  * ----------------------------------------
  */
 .menu_text:hover .checkbox {
   display: block;
-  flex: 0 0 15%;
+  flex: 0 0 60px;
   background: #99e2d0;
-  max-width: 60px;
   overflow: hidden;
-  animation: slide-left ease 0.3s;
   animation-fill-mode: forwards;
   transform-origin: 50% 50%;
   transition-property: transform;
 }
-.check {
-  transform: rotate(360deg);
-  transition-duration: 0.8s;
+.checkbox {
+  animation: slide-left ease 1000ms;
   width: 35px;
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-20px);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate-center on check
+ * ----------------------------------------
+ */
+.check {
+  -webkit-animation: rotate-center 0.8s ease-in-out alternate-reverse both;
+  animation: rotate-center 0.8s ease-in-out alternate-reverse both;
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg), scaleX(2);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg), scaleX(2);
+  }
 }
 
 /* ----------------------------------------
