@@ -1,101 +1,111 @@
-.restaurant {
-  &_img {
-    background-color: aqua;
+/* ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+.check {
+  -webkit-animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) linear
+    1s both;
+  animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) linear 1s both;
+}
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 }
-.button {
-  $border-rad: 2rem;
-  $clr-btn: #15dea5;
-  .btn {
-    border-radius: $border-rad;
-    background-color: $clr-btn;
-    transition: background-color 250ms;
-    &:hover {
-      background-color: darken($clr-btn, 5);
-    }
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
   }
 }
-.btn-circle {
-  font-size: 24px;
-  color: #fff;
+/* ----------------------------------------
+ * animation check
+ * ----------------------------------------
+ */
+.menu_text:hover .checkbox {
+  display: block;
+  flex: 0 0 15%;
+  background: #99e2d0;
+  max-width: 60px;
+  overflow: hidden;
+  animation: slide-left ease 0.3s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
+  transition-property: transform;
+}
+.check {
   transform: rotate(360deg);
+  transition-duration: 0.8s;
+  width: 35px;
 }
 
-/**
- * ----------------------------------------
- * animation de l'icone validation
+/* ----------------------------------------
+ * animation fade entrées, plats, desserts
  * ----------------------------------------
  */
+.fade-1 {
+  animation: fadeIn 0.4s;
+}
 
-@keyframes validebtn {
-  0% {
-    transform: rotade(-90deg);
-  }
-  20% {
-    transform: rotade(-75deg) scale(1.03);
-  }
-  40% {
-    transform: rotade(-60deg) scale(1.08);
-  }
-  60% {
-    transform: rotate(-45deg) scale(1.15);
-  }
-  80% {
-    transform: rotade(-30deg) scale(1.08);
-  }
-  100% {
-    transform: rotate(5deg) scale(1);
-  }
+.fade-2 {
+  animation: fadeIn 0.8s;
 }
-/**
- * ----------------------------------------
- * animation du checkbox
- * ----------------------------------------
- */
-@keyframes checkbox {
-  0% {
-    transform: translate(50px, 0);
-  }
-  20% {
-    transform: translate(30px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  60% {
-    transform: translate(15px, 0);
-  }
-  80% {
-    transform: translate(7px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
+
+.fade-3 {
+  animation: fadeIn 1.2s;
 }
-@keyframes checkbox-contain {
-  0% {
-    transform: translate(50px, 0);
-  }
-  40% {
-    transform: translate(25px, 0);
-  }
-  70% {
-    transform: translate(12px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
+
+.fade-4 {
+  animation: fadeIn 1.6s;
 }
-/**
- * ----------------------------------------
- * animation de page
- * ----------------------------------------
- */
-@keyframes fadeIn {
-  from {
-    transform: scale(0.1);
-  }
-  to {
-    transform: scale(1);
-  }
+
+.fade-5 {
+  animation: fadeIn 2s;
+}
+
+.fade-6 {
+  animation: fadeIn 2.4s;
+}
+
+.fade-7 {
+  animation: fadeIn 2.8s;
+}
+
+.fade-8 {
+  animation: fadeIn 3.2s;
+}
+
+.fade-9 {
+  animation: fadeIn 3.6s;
+}
+
+.fade-10 {
+  animation: fadeIn 4s;
+}
+
+.fade-11 {
+  animation: fadeIn 4.4s;
+}
+
+.fade-12 {
+  animation: fadeIn 4.8s;
+}
+
+.fade-13 {
+  animation: fadeIn 5.2s;
+}
+
+.fade-14 {
+  animation: fadeIn 5.6s;
+}
+
+.fade-15 {
+  animation: fadeIn 6s;
 }

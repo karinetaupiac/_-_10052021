@@ -10,9 +10,13 @@
 @import "./components/_loadingspinner.scss";
 @import "./components/_photo.scss";
 @import "./components/_heart.scss";
+
 body {
   font-family: roboto, sans-serif;
   margin: 0;
+}
+body a {
+  text-decoration: none;
 }
 /*localisation*/
 #localisation {
@@ -23,7 +27,7 @@ body {
   font-size: 1.2rem;
 }
 .map {
-  padding: 15px 10px;
+  padding: 20px 10px;
 }
 .localisation_title {
   font-weight: 700;
