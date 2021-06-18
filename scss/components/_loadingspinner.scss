@@ -1,13 +1,13 @@
 .loader {
   position: fixed;
+  display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: #f2f2f2;
-  display: flex;
   justify-content: center;
   align-items: center;
   animation: spinloader 5s forwards;
-  overflow-y: hidden;
+  z-index: 2;
+  background-color: #333;
 }
 .spin-container {
   text-align: center;
@@ -109,14 +109,12 @@
     visibility: hidden;
   }
 }
-#text1 {
-  color: black;
+#text1,
+#text3 {
+  color: $color-first-violet;
 }
 #text2 {
   color: $color-second-rose;
-}
-#text3 {
-  color: $color-first-violet;
 }
 
 @keyframes spinloader {
