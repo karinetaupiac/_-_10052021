@@ -7,13 +7,9 @@
   flex: 0 0 60px;
   background: #99e2d0;
   overflow: hidden;
-  animation-fill-mode: forwards;
-  transform-origin: 50% 50%;
-  transition-property: transform;
 }
 .checkbox {
-  animation: slide-left ease 1000ms;
-  width: 35px;
+  animation: slide-left ease 1000ms width 2;
 }
 @keyframes slide-left {
   from {
@@ -23,7 +19,6 @@
     transform: translateX(-20px);
   }
 }
-
 /**
  * ----------------------------------------
  * animation rotate-center on check
@@ -36,24 +31,23 @@
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0);
+    transform: rotate(0), scaleX(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg), scaleX(2);
+    transform: rotate(360deg), scaleX(5);
   }
 }
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0);
+    transform: rotate(0), scaleX(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg), scaleX(2);
+    transform: rotate(360deg), scaleX(5);
   }
 }
-
 /* ----------------------------------------
  * animation fade entrées, plats, desserts
  * ----------------------------------------

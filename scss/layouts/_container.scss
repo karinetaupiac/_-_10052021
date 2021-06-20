@@ -200,6 +200,7 @@ h4 {
   margin: 10px 0;
   flex: 1 0 33%;
   overflow: hidden;
+  width: auto;
 }
 @media only screen and (min-width: 1024px) {
   .menu_text {
@@ -209,7 +210,7 @@ h4 {
 }
 .menu_text:hover {
   box-shadow: 0 5px 15px 0 #9d9d9d;
-  width: 35%;
+  width: 30%;
 }
 .menu_text .price_container {
   display: flex;
@@ -223,7 +224,6 @@ h4 {
 }
 .menu_text .checkbox {
   display: none;
-  width: 30%;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   color: $color-third-turquoise;
