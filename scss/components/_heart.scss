@@ -2,14 +2,6 @@
   margin: 20px;
   padding-right: 10px;
 }
-/*.menu_fill_heart {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}*/
 .fill {
   color: black;
   cursor: pointer;
@@ -19,16 +11,17 @@
     animation: fill 0.3s ease-in-out;
     display: inline-block;
     opacity: 1;
-    background: -webkit-gradient(
-      linear,
-      right top,
-      left top,
-      from(#9356dc),
-      color-stop(#b35cdc),
-      color-stop(#cf64dc),
-      color-stop(#e86edb),
-      to(#ff79da)
-    );
+    background: -webkit-gradient
+      (
+        linear,
+        right top,
+        left top,
+        from (#9356dc),
+        color-stop (#b35cdc),
+        color-stop (#cf64dc),
+        color-stop (#e86edb),
+        to(#ff79da)
+      );
     background: -o-linear-gradient(
       right,
       #9356dc,

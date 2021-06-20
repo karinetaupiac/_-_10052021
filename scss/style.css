@@ -11,53 +11,10 @@
 #roseGroup {
   fill: var(--second-rose);
 }
-
-.heart_empty--empty {
-  z-index: 1;
-  stroke: black;
-}
-.heart_empty:hover .heart_full {
-  opacity: 1;
-  transform: scale(1);
-}
-.heart_empty--full {
-  z-index: 2;
-  fill: url(#gradient);
-  stroke: url(#gradient);
-  opacity: 0;
-  transform: scale(0);
-  transition: all 0.5s;
-}
-
-.restaurant_img {
-  background-color: aqua;
-}
-
-.button .btn {
-  border-radius: 2rem;
-  background-color: #15dea5;
-  transition: background-color 250ms;
-}
-.button .btn:hover {
-  background-color: #13c794;
-}
-
-.btn-circle {
-  font-size: 24px;
-  color: #fff;
-  transform: rotate(360deg);
-}
-
-body,
-html {
-  opacity: 1;
-}
-
 .spin-container {
   text-align: center;
   margin-top: 400px;
 }
-
 .spin {
   border: 3px solid #ff79da;
   width: 200px;
@@ -68,9 +25,8 @@ html {
   border-right-color: transparent;
   overflow: hidden;
   -webkit-animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
-          animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
-
 #loader2 {
   border: 3px solid #9356dc;
   width: 220px;
@@ -80,9 +36,8 @@ html {
   border-left-color: transparent;
   border-right-color: transparent;
   -webkit-animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
-          animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
-
 #loader3 {
   border: 3px solid #ff79da;
   width: 240px;
@@ -92,9 +47,8 @@ html {
   border-left-color: transparent;
   border-right-color: transparent;
   -webkit-animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
-          animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
-
 #loader4 {
   border: 3px solid #9356dc;
   width: 260px;
@@ -104,9 +58,8 @@ html {
   border-left-color: transparent;
   border-right-color: transparent;
   -webkit-animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
-          animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
+  animation: rotate2 4s cubic-bezier(0.26, 1.36, 0.74, -0.29) forwards;
 }
-
 @-webkit-keyframes rotate {
   0% {
     transform: rotateZ(-360deg);
@@ -115,7 +68,6 @@ html {
     transform: rotateZ(0deg);
   }
 }
-
 @keyframes rotate {
   0% {
     transform: rotateZ(-360deg);
@@ -230,7 +182,7 @@ html {
 
 .restaurant_img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   max-height: 200px;
   border-top-left-radius: 1em;
@@ -318,7 +270,6 @@ h3,
   padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  align-items: left;
 }
 .footer_icon {
   color: white;
@@ -370,7 +321,7 @@ h4 {
 .restaurants_img {
   position: relative;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -501,43 +452,6 @@ h2 {
   justify-content: space-between;
 }
 
-svg:hover path {
-  fill: #ff79da;
-  stroke: none;
-  -webkit-animation-name: color;
-  animation-name: color;
-}
-
-@-webkit-keyframes color {
-  from {
-    color: #9356dc;
-    background: linear-gradient(#ff79da, #9356dc);
-    transition: 2s 2s ease linear-gradient #ff79da, #9356dc;
-  }
-  to {
-    color: #ff79da;
-  }
-}
-@keyframes color {
-  from {
-    color: #9356dc;
-    background: linear-gradient(#ff79da, #9356dc);
-    transition: 2s 2s ease linear-gradient #ff79da, #9356dc;
-  }
-  to {
-    color: #ff79da;
-  }
-}
-.heart_full {
-  margin-top: 10px;
-  height: 30px;
-  position: relative;
-  margin-right: 40px;
-  stroke: black;
-  stroke-width: 20px;
-  cursor: pointer;
-}
-
 /*entrées*/
 .menu {
   width: 100%;
@@ -609,4 +523,4 @@ p {
 .check {
   text-align: end;
   font-weight: 600;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

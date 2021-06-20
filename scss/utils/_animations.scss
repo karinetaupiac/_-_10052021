@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 .checkbox {
-  animation: slide-left ease 1000ms width 2;
+  animation: slide-left ease 1000ms;
 }
 @keyframes slide-left {
   from {
@@ -31,21 +31,21 @@
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0), scaleX(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg), scaleX(5);
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
-    transform: rotate(0), scaleX(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg), scaleX(5);
+    transform: rotate(360deg);
   }
 }
 /* ----------------------------------------

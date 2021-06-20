@@ -15,11 +15,11 @@
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 15px 0 0 15px;
+    &_title {
+      text-align: left;
+      font-weight: bold;
+    }
   }
-}
-h2 {
-  font-size: 18px;
-  font-weight: bold;
 }
 .choice_number {
   background-color: #9356dc;
@@ -83,7 +83,7 @@ h2 {
   background-color: #f0808021;
 }
 @media screen and (min-width: 769px) {
-  h2 {
+  function_title {
     max-width: 1440px;
     text-align: center;
   }
